@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.hrstwn.ukara</id>
+
+  <name>Ukara</name>
+  <summary>Latin to Javanese transliteration app</summary>
+
+  <metadata_license>CC-BY-4.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <content_rating type="oars-1.1" />
+
+
+  <description>
+    <p>
+      Quickly transliterate Latin alphabets to Javanese abugidas
+    </p>
+  </description>
+
+  <launchable type="desktop-id">com.github.hrstwn.ukara.desktop</launchable>
+</component>

@@ -1,0 +1,6 @@
+# List of files installed by Meson
+# Does not contain files installed by custom scripts.
+/usr/bin/com.github.hrstwn.ukara
+/usr/share/applications/com.github.hrstwn.ukara.desktop
+/usr/share/metainfo/com.github.hrstwn.ukara.metainfo.xml
+/usr/share/glib-2.0/schemas/com.github.hrstwn.ukara.gschema.xml

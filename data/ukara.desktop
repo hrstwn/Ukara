@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+
+Name=Ukara
+Comment=Latin to Javanese transliteration app
+Categories=Education;
+
+Icon=com.github.hrstwn.ukara
+Exec=com.github.hrstwn.ukara
+Terminal=false
