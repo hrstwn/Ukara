@@ -26,7 +26,9 @@ public class Window : Gtk.ApplicationWindow {
         });
         
         var headerbar = new HeaderBar ();
-        var button_trans = new Gtk.Button.with_label ("Transliterate");
+        var button_trans = new Gtk.Button.with_label ("Transliterate"){
+            margin = 12
+        };
         var latin_input = new Gtk.TextView (){
             hexpand = true,
             vexpand = true,
@@ -35,7 +37,7 @@ public class Window : Gtk.ApplicationWindow {
         var jv_placeholder = "Ukara";
         
         var javanese_out = new Gtk.TextView (){
-            margin = 12,
+            // margin = 12,
             vexpand = true,
             wrap_mode = Gtk.WrapMode.WORD_CHAR,
             editable = false
@@ -69,9 +71,9 @@ public class Window : Gtk.ApplicationWindow {
         
         try {
             css_provider.load_from_data(""
-                + ".main {margin:10px}"
-                + ".aksara {font-size:36px;background:transparent;}"
-                + ".latin {background:#fff;border:2px solid #000;}"
+                + ".main {margin:0px}"
+                + ".aksara {font-size:36px;background:#fdf6e3;padding:12px;}"
+                + ".latin {background:transparent; padding:12px;}"
             );
         }
         
