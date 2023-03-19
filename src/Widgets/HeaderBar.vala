@@ -13,7 +13,7 @@ public class HeaderBar : Gtk.HeaderBar {
         
         try {
             css_header.load_from_data(""
-                + ".default-decoration {background:#fdf6e3}"
+                + ".default-decoration {background:#f2d9b6}"
             );
         }
         catch (GLib.Error e) {
