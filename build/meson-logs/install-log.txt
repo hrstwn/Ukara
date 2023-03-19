@@ -4,3 +4,7 @@
 /usr/share/applications/com.github.hrstwn.ukara.desktop
 /usr/share/metainfo/com.github.hrstwn.ukara.metainfo.xml
 /usr/share/glib-2.0/schemas/com.github.hrstwn.ukara.gschema.xml
+/usr/share/icons/hicolor/64x64/apps/com.github.hrstwn.ukara.svg
+/usr/share/icons/hicolor/64x64@2/apps/com.github.hrstwn.ukara.svg
+/usr/share/icons/hicolor/128x128/apps/com.github.hrstwn.ukara.svg
+/usr/share/icons/hicolor/128x128@2/apps/com.github.hrstwn.ukara.svg

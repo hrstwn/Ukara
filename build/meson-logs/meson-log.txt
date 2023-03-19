@@ -1,6 +1,6 @@
-Build started at 2023-03-18T19:12:39.971768
+Build started at 2023-03-20T01:09:10.065469
 Main binary: /usr/bin/python3
-Build Options: -Dprefix=/usr
+Build Options: -Dprefix=/usr -Dbackend=ninja
 Python system: Linux
 The Meson build system
 Version: 0.61.2
@@ -9,50 +9,11 @@ Build dir: /home/hrstwn/Projects/Ukara/build
 Build type: native build
 Project name: com.github.hrstwn.ukara
 Project version: undefined
-Sanity testing C compiler: cc
-Is cross compiler: False.
-Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
-Sanity check compile stdout:
-
------
-Sanity check compile stderr:
-
------
-Running test binary command: /home/hrstwn/Projects/Ukara/build/meson-private/sanitycheckc.exe
 C compiler for the host machine: cc (gcc 11.3.0 "cc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0")
 C linker for the host machine: cc ld.bfd 2.38
-Running compile:
-Working directory:  /tmp/tmpmngjlrvp
-Command line:  valac /tmp/tmpmngjlrvp/testfile.vala -C 
-
-Code:
- class MesonSanityCheck : Object { }
-Compiler stdout:
- 
-Compiler stderr:
- 
 Vala compiler for the host machine: valac (valac 0.56.4)
-Sanity testing C compiler: cc
-Is cross compiler: False.
-Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
-Sanity check compile stdout:
-
------
-Sanity check compile stderr:
-
------
-Running test binary command: /home/hrstwn/Projects/Ukara/build/meson-private/sanitycheckc.exe
 C compiler for the build machine: cc (gcc 11.3.0 "cc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0")
 C linker for the build machine: cc ld.bfd 2.38
-Using cached compile:
-Cached command line:   
-
-Code:
- class MesonSanityCheck : Object { }
-Cached compiler stdout:
- 
-Cached compiler stderr:
- 
 Vala compiler for the build machine: valac (valac 0.56.4)
 Build machine cpu family: x86_64
 Build machine cpu: x86_64
@@ -60,49 +21,20 @@ Host machine cpu family: x86_64
 Host machine cpu: x86_64
 Target machine cpu family: x86_64
 Target machine cpu: x86_64
-Pkg-config binary for 1 is not cached.
-Pkg-config binary missing from cross or native file, or env var undefined.
-Trying a default Pkg-config fallback at pkg-config
-Found pkg-config: /usr/bin/pkg-config (0.29.2)
-Determining dependency 'gtk+-3.0' with pkg-config executable '/usr/bin/pkg-config'
-env[PKG_CONFIG_PATH]: 
-Called `/usr/bin/pkg-config --modversion gtk+-3.0` -> 0
-3.24.33
-env[PKG_CONFIG_PATH]: 
-Called `/usr/bin/pkg-config --cflags gtk+-3.0` -> 0
--pthread -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gtk-3.0 -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/x86_64-linux-gnu -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
-env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
-env[PKG_CONFIG_PATH]: 
-Called `/usr/bin/pkg-config --libs gtk+-3.0` -> 0
--L/usr/lib/x86_64-linux-gnu -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
-env[PKG_CONFIG_PATH]: 
-Called `/usr/bin/pkg-config --libs gtk+-3.0` -> 0
--lgtk-3 -lgdk-3 -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+Dependency gtk+-3.0 found: YES 3.24.33 (cached)
+Dependency json-glib-1.0 found: YES 1.6.6 (cached)
+Build targets in project: 1
+
+com.github.hrstwn.ukara undefined
+
+  User defined options
+    backend: ninja
+    prefix : /usr
+
+Found ninja-1.10.1 at /usr/bin/ninja
 Running compile:
-Working directory:  /home/hrstwn/Projects/Ukara/build/meson-private/tmpavng3bgy
-Command line:  cc /home/hrstwn/Projects/Ukara/build/meson-private/tmpavng3bgy/testfile.c -o /home/hrstwn/Projects/Ukara/build/meson-private/tmpavng3bgy/output.exe -D_FILE_OFFSET_BITS=64 -O0 
-
-Code:
- #include<stdio.h>
-        
-        int main(void) {
-            printf("%ld\n", (long)(sizeof(void *)));
-            return 0;
-        }
-Compiler stdout:
- 
-Compiler stderr:
- 
-Program stdout:
-
-8
-
-Program stderr:
-
-
-Running compile:
-Working directory:  /home/hrstwn/Projects/Ukara/build/meson-private/tmp7a6rvzyi
-Command line:  cc /home/hrstwn/Projects/Ukara/build/meson-private/tmp7a6rvzyi/testfile.c -o /home/hrstwn/Projects/Ukara/build/meson-private/tmp7a6rvzyi/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+Working directory:  /home/hrstwn/Projects/Ukara/build/meson-private/tmpann_c9k0
+Command line:  cc /home/hrstwn/Projects/Ukara/build/meson-private/tmpann_c9k0/testfile.c -o /home/hrstwn/Projects/Ukara/build/meson-private/tmpann_c9k0/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
 
 Code:
  
@@ -113,34 +45,17 @@ libraries: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/.
 
 Compiler stderr:
  
-Run-time dependency gtk+-3.0 found: YES 3.24.33
-Pkg-config binary for 1 is cached.
-Determining dependency 'json-glib-1.0' with pkg-config executable '/usr/bin/pkg-config'
-env[PKG_CONFIG_PATH]: 
-Called `/usr/bin/pkg-config --modversion json-glib-1.0` -> 0
-1.6.6
-env[PKG_CONFIG_PATH]: 
-Called `/usr/bin/pkg-config --cflags json-glib-1.0` -> 0
--pthread -I/usr/include/json-glib-1.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
-env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
-env[PKG_CONFIG_PATH]: 
-Called `/usr/bin/pkg-config --libs json-glib-1.0` -> 0
--L/usr/lib/x86_64-linux-gnu -ljson-glib-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
-env[PKG_CONFIG_PATH]: 
-Called `/usr/bin/pkg-config --libs json-glib-1.0` -> 0
--ljson-glib-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
-Run-time dependency json-glib-1.0 found: YES 1.6.6
-Build targets in project: 1
-
-com.github.hrstwn.ukara undefined
-
-  User defined options
-    prefix: /usr
-
-Found ninja-1.10.1 at /usr/bin/ninja
 Failed to guess install tag for /usr/share/applications/com.github.hrstwn.ukara.desktop
 Failed to guess install tag for /usr/share/metainfo/com.github.hrstwn.ukara.metainfo.xml
 Failed to guess install tag for /usr/share/glib-2.0/schemas/com.github.hrstwn.ukara.gschema.xml
+Failed to guess install tag for /usr/share/icons/hicolor/64x64/apps/com.github.hrstwn.ukara.svg
+Failed to guess install tag for /usr/share/icons/hicolor/64x64@2/apps/com.github.hrstwn.ukara.svg
+Failed to guess install tag for /usr/share/icons/hicolor/128x128/apps/com.github.hrstwn.ukara.svg
+Failed to guess install tag for /usr/share/icons/hicolor/128x128@2/apps/com.github.hrstwn.ukara.svg
 Failed to guess install tag for /usr/share/applications/com.github.hrstwn.ukara.desktop
 Failed to guess install tag for /usr/share/metainfo/com.github.hrstwn.ukara.metainfo.xml
 Failed to guess install tag for /usr/share/glib-2.0/schemas/com.github.hrstwn.ukara.gschema.xml
+Failed to guess install tag for /usr/share/icons/hicolor/64x64/apps/com.github.hrstwn.ukara.svg
+Failed to guess install tag for /usr/share/icons/hicolor/64x64@2/apps/com.github.hrstwn.ukara.svg
+Failed to guess install tag for /usr/share/icons/hicolor/128x128/apps/com.github.hrstwn.ukara.svg
+Failed to guess install tag for /usr/share/icons/hicolor/128x128@2/apps/com.github.hrstwn.ukara.svg
